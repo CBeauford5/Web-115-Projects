@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ageChecker</title>
+
+    <script>
+        var theAge= parseInt(prompt("Please enter your age"));
+        document.getElementById("myButton");
+        addEventListener("click", myRedirect);
+        function myRedirect() {
+            if (theAge < 21) {
+                window.location = "http://www.disney.com/";
+            } 
+            else {
+                window.location = "http://www.espn.com/";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Redirecting the viewer with an if/else statement</h2>
+    <p>Please enter your age and then click the "Go" button to be redirected to an age appropriate webpage.</p>
+    <button id = "myButton">Go</button>
+</body>
+
+</html>
